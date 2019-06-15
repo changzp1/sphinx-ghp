@@ -1,0 +1,18 @@
+# Writing content
+
+## Articles and pages
+Pelican considers “articles” to be chronological content, such as posts on a blog, and thus associated with a date.
+
+The idea behind “pages” is that they are usually not temporal in nature and are used for content that does not change very often (e.g., “About” or “Contact” pages).
+
+You can find sample content in the repository at samples/content/.
+## File metadata
+Pelican tries to be smart enough to get the information it needs from the file system (for instance, about the category of your articles), but some information you need to provide in the form of metadata inside your files.
+
+If you are writing your content in reStructuredText format, you can provide this metadata in text files via the following syntax (give your file the .rst extension):
+## Static content
+If you want to exclude any pages from being linked to or listed in the menu then add a status: hidden attribute to its metadata. This is useful for things like making error pages that fit the generated theme of your site.
+### Mixed content in the same directory
+Static files are files other than articles and pages that are copied to the output folder as-is, without processing. You can control which static files are copied over with the STATIC_PATHS setting of the project’s pelicanconf.py file. Pelican’s default configuration includes the images directory for this, but others must be added manually. In addition, static files that are explicitly linked to are included (see below).
+### Linking to internal content
+Note: Placing static and content source files together in the same source directory does not guarantee that they will end up in the same place in the generated site. The easiest way to do this is by using the {attach} link syntax (described below). Alternatively, the STATIC_SAVE_AS, PAGE_SAVE_AS, and ARTICLE_SAVE_AS settings (and the corresponding *_URL settings) can be configured to place files of different types together, just as they could in earlier versions of Pelican.

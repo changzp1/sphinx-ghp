@@ -1,0 +1,22 @@
+# quickstart
+
+## quickstart step1
+```python
+def greet():
+    print('hello')
+```
+## quickstart step2
+```python
+def greet():
+    print('hello')
+```
+## quickstart step3
+```python
+def greet():
+    print('hello')
+```
+## quickstart step4s
+```javascript
+const app = document.getElementById('app')
+app.innerText = 'hello world'
+```

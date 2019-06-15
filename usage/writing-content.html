@@ -1,0 +1,247 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Writing content &mdash; sphinx-demo  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="testfgdsag" href="test.html" />
+    <link rel="prev" title="installation" href="installation.html" />
+  <link href="../_static/css/custom.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  
+  ../sphinx-demo.html
+
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> sphinx-demo
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Content:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">installation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Writing content</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#articles-and-pages">Articles and pages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#file-metadata">File metadata</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#static-content">Static content</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#mixed-content-in-the-same-directory">Mixed content in the same directory</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#linking-to-internal-content">Linking to internal content</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="test.html">testfgdsag</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">sphinx-demo</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Writing content</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <!-- User defined GitHub URL -->
+              <a href="https://www.baidu.com/" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="writing-content">
+<h1>Writing content<a class="headerlink" href="#writing-content" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="articles-and-pages">
+<h2>Articles and pages<a class="headerlink" href="#articles-and-pages" title="Permalink to this headline">¶</a></h2>
+<p>Pelican considers “articles” to be chronological content, such as posts on a blog, and thus associated with a date.</p>
+<p>The idea behind “pages” is that they are usually not temporal in nature and are used for content that does not change very often (e.g., “About” or “Contact” pages).</p>
+<p>You can find sample content in the repository at samples/content/.</p>
+</div>
+<div class="section" id="file-metadata">
+<h2>File metadata<a class="headerlink" href="#file-metadata" title="Permalink to this headline">¶</a></h2>
+<p>Pelican tries to be smart enough to get the information it needs from the file system (for instance, about the category of your articles), but some information you need to provide in the form of metadata inside your files.</p>
+<p>If you are writing your content in reStructuredText format, you can provide this metadata in text files via the following syntax (give your file the .rst extension):</p>
+</div>
+<div class="section" id="static-content">
+<h2>Static content<a class="headerlink" href="#static-content" title="Permalink to this headline">¶</a></h2>
+<p>If you want to exclude any pages from being linked to or listed in the menu then add a status: hidden attribute to its metadata. This is useful for things like making error pages that fit the generated theme of your site.</p>
+<div class="section" id="mixed-content-in-the-same-directory">
+<h3>Mixed content in the same directory<a class="headerlink" href="#mixed-content-in-the-same-directory" title="Permalink to this headline">¶</a></h3>
+<p>Static files are files other than articles and pages that are copied to the output folder as-is, without processing. You can control which static files are copied over with the STATIC_PATHS setting of the project’s pelicanconf.py file. Pelican’s default configuration includes the images directory for this, but others must be added manually. In addition, static files that are explicitly linked to are included (see below).</p>
+</div>
+<div class="section" id="linking-to-internal-content">
+<h3>Linking to internal content<a class="headerlink" href="#linking-to-internal-content" title="Permalink to this headline">¶</a></h3>
+<p>Note: Placing static and content source files together in the same source directory does not guarantee that they will end up in the same place in the generated site. The easiest way to do this is by using the {attach} link syntax (described below). Alternatively, the STATIC_SAVE_AS, PAGE_SAVE_AS, and ARTICLE_SAVE_AS settings (and the corresponding *_URL settings) can be configured to place files of different types together, just as they could in earlier versions of Pelican.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="test.html" class="btn btn-neutral float-right" title="testfgdsag" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="installation.html" class="btn btn-neutral float-left" title="installation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, czp
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
